@@ -1,0 +1,18 @@
+---
+description: Universal cross-LLM agent skill porter. Use when porting skills or rules from Claude, Antigravity, or ChatGPT into Cursor.
+globs: *
+alwaysApply: false
+---
+
+# Skill Port - Cursor Rule
+
+Use this rule when the user asks to import or convert skills from Claude Code (`.claude/skills`), Antigravity (`.agents/skills`), or OpenAI into Cursor IDE rules.
+
+## Instructions
+1. Extract the instructions and triggers from the source skill.
+2. Create or update `.cursor/rules/<skill-name>.mdc` with frontmatter:
+   - `description`: The trigger conditions and purpose of the rule.
+   - `globs`: Applicable file globs (or `*`).
+   - `alwaysApply`: false (or true if always active).
+3. Transpile vendor-specific instructions into standard IDE editing directives.
+

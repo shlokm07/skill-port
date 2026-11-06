@@ -1,0 +1,40 @@
+{
+  "name": "skill-port",
+  "version": "1.0.0",
+  "description": "Universal Cross-LLM Agent Skill Porter & Transpiler. Write once, run on any AI agent (Claude Code, ChatGPT/OpenAI, Google Antigravity/Gemini, Cursor, Windsurf, Copilot).",
+  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
+  "bin": {
+    "skill-port": "./bin/skill-port.js",
+    "skillport": "./bin/skill-port.js",
+    "agent-port": "./bin/skill-port.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test tests/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai-agent",
+    "skills",
+    "claude-code",
+    "chatgpt",
+    "antigravity",
+    "gemini",
+    "cursor",
+    "windsurf",
+    "copilot",
+    "transpiler",
+    "agent-skills"
+  ],
+  "author": "Skill Port Contributors",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  }
+}

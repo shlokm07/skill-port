@@ -1,0 +1,6 @@
+interface:
+  display_name: "Skill Port"
+  short_description: "Universal Cross-LLM Agent Skill Porter"
+policy:
+  allow_implicit_invocation: true
+
